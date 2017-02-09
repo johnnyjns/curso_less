@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/johnnyjns/curso_less/issues"
   },
-  "homepage": "https://github.com/johnnyjns/curso_less#readme"
+  "homepage": "https://github.com/johnnyjns/curso_less#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
 }
