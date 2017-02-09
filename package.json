@@ -1,0 +1,19 @@
+{
+  "name": "curso_less",
+  "version": "1.0.0",
+  "description": "curso_less",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnnyjns/curso_less.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnnyjns/curso_less/issues"
+  },
+  "homepage": "https://github.com/johnnyjns/curso_less#readme"
+}
