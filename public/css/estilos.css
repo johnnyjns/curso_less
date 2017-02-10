@@ -46,7 +46,7 @@ header .container {
   width: 5em;
 }
 .menu-opcoes a {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 .menu-opcoes a:hover {
@@ -83,6 +83,9 @@ header .container {
   border-radius: 0.3em;
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   font-weight: bold;
+}
+.destaque button:hover {
+  background: #304756;
 }
 /** Sobre **/
 .sobre {
@@ -133,10 +136,10 @@ header .container {
   background: #1e2c35;
 }
 .planos h2 {
-  color: #fff;
+  color: #c24e4b;
 }
 .plano {
-  background: white;
+  background: #fff;
   width: 18em;
   display: inline-block;
   margin: 1em 0 0 1.4em;
@@ -178,7 +181,7 @@ header .container {
 .plano button {
   background: #c24e4b;
   border: 0;
-  color: #000;
+  color: #fff;
   width: 210px;
   height: 38px;
   font-size: 1.2em;
@@ -186,6 +189,9 @@ header .container {
   border-radius: 0.3em;
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   margin-left: 2em;
+}
+.plano button:hover {
+  background: #304756;
 }
 .icone-check,
 .icone-x {
@@ -244,6 +250,9 @@ header .container {
 .contato button {
   display: block;
 }
+.contato button:hover {
+  background: #304756;
+}
 form {
   margin: 0 auto;
   width: 50%;
@@ -261,7 +270,7 @@ textarea {
   margin: 0 auto;
   background: #c24e4b;
   border: 0;
-  color: #000;
+  color: #fff;
   width: 210px;
   height: 38px;
   font-size: 1.2em;
@@ -324,7 +333,7 @@ footer .container img {
   display: inline;
 }
 footer a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 .social li {

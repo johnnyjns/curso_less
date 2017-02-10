@@ -1,4 +1,5 @@
 @cor-padrao: #c24e4b;
+@cor-auxiliar: #1e2c35;
 @cor-branca: #fff;
 @cor-preta: #000;
 
@@ -32,7 +33,7 @@ h2 {
 /** Header **/
 header {
   border-top: 5px solid @cor-padrao;
-  background: rgba(30, 44, 53, 0.8);
+  background: fade(@cor-auxiliar, 80);
   height: 90px;
   width: 100%;
   position: absolute;
@@ -60,7 +61,7 @@ header .container {
 }
 
 .menu-opcoes a {
-  color: white;
+  color: @cor-branca;
   text-decoration: none;
 }
 
@@ -105,6 +106,9 @@ header .container {
   font-weight: bold;
 }
 
+.destaque button:hover {
+    background: lighten(@cor-auxiliar, 10);
+}
 
 /** Sobre **/
 .sobre {
@@ -163,15 +167,15 @@ header .container {
 
 /** Planos **/
 .planos {
-  background: #1e2c35;
+  background: @cor-auxiliar;
 }
 
 .planos h2 {
-  color: @cor-branca;
+  color: @cor-padrao;
 }
 
 .plano {
-  background: white;
+  background: @cor-branca;
   width: 18em;
   display: inline-block;
   margin: 1em 0 0 1.4em;
@@ -221,7 +225,7 @@ header .container {
 .plano button {
   background: @cor-padrao;
   border: 0;
-  color: @cor-preta;
+  color: @cor-branca;
   width: 210px;
   height: 38px;
   font-size: 1.2em;
@@ -229,6 +233,10 @@ header .container {
   border-radius: 0.3em;
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   margin-left: 2em;
+}
+
+.plano button:hover {
+    background: lighten(@cor-auxiliar, 10);
 }
 
 .icone-check, .icone-x {
@@ -244,7 +252,6 @@ header .container {
 .icone-x {
   background-position: -33px -5px;
 }
-
 
 
 /** Blog **/
@@ -300,6 +307,10 @@ header .container {
   display: block;
 }
 
+.contato button:hover {
+    background: lighten(@cor-auxiliar, 10);
+}
+
 form {
   margin: 0 auto;
   width: 50%;
@@ -319,7 +330,7 @@ textarea {
   margin: 0 auto;
   background: @cor-padrao;
   border: 0;
-  color: @cor-preta;
+  color: @cor-branca;
 ;
   width: 210px;
   height: 38px;
@@ -349,7 +360,7 @@ footer::after {
 
 footer::before {
   content: "";
-  background: #1e2c35;
+  background: @cor-auxiliar;
   top: 0;
   left: 0;
   bottom: 0;
@@ -394,7 +405,7 @@ footer .container img {
 }
 
 footer a {
-  color: @cor-preta;
+  color: @cor-branca;
   text-decoration: none;
 }
 
