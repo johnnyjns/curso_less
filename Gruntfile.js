@@ -45,7 +45,7 @@ module.exports = function(grunt){
 
     });
 
-    grunt.registerTask('monitoramento', ['watch', 'dist']);
+    grunt.registerTask('monitoramento', ['watch']);
     grunt.registerTask('dist', ['clean', 'copy']);
     grunt.registerTask('default', ['dist']);
 
