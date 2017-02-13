@@ -23,7 +23,8 @@ module.exports = function(grunt){
 
             development: {
                 files: {
-                    "public/css/estilos.css": "public/less/estilos.less" // Caminho dos arquivos
+                    "public/css/estilos.css": "public/less/estilos.less", // Caminho dos arquivos
+                    "public/css/media-queries.css": "public/less/media-queries.less" // Caminho dos arquivos
                 }
             }
         },
