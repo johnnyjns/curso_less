@@ -21,36 +21,28 @@ module.exports = function(grunt){
 
         less: {
 
-            compilar: {
-                expand: true,
-                cwd: 'public/less',
-                src: ['**/*.less'],
-                dest: 'public/css',
-                ext: '.css'
+            development: {
+                files: {
+                    "public/css/estilos.css": "public/less/estilos.less" // Caminho dos arquivos
+                }
             }
         },
 
         watch: {
 
-            less: {
-
-                options: {
-                    event: ['added', 'changed']
-                },
-
-                files: 'public/less/**/*.less',
-                tasks: 'less:compilar'
+            styles: {
+                files: ['public/less/*.less'], // Quais arquivos o grunt ficará de olho
+                tasks: ['less']
             }
         }
 
     });
 
-    grunt.registerTask('monitoramento', ['watch', 'dist']);
-    grunt.registerTask('dist', ['clean', 'copy']);
-    grunt.registerTask('default', ['dist']);
+    grunt.registerTask('default', ['less', 'watch']);
 
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    // grunt.loadNpmTasks('jit-grunt');
 }

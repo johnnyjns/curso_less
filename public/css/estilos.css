@@ -85,7 +85,10 @@ header .container {
   font-weight: bold;
 }
 .destaque button:hover {
-  background: #304756;
+  background: #c8615e;
+}
+.destaque button:active {
+  background: #b6413e;
 }
 /** Sobre **/
 .sobre {

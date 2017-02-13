@@ -2,6 +2,7 @@
 @cor-auxiliar: #1e2c35;
 @cor-branca: #fff;
 @cor-preta: #000;
+@cor-cinza: gray;
 
 /** Geral **/
 body {
@@ -107,7 +108,11 @@ header .container {
 }
 
 .destaque button:hover {
-    background: lighten(@cor-auxiliar, 10);
+    background: lighten(@cor-padrao, 5);
+}
+
+.destaque button:active {
+    background: darken(@cor-padrao, 5);
 }
 
 /** Sobre **/
