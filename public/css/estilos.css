@@ -356,7 +356,10 @@ td,
 th {
   padding: 0;
 }
-.sombra-padrao {
+.sombra-padrao,
+.destaque button,
+.plano button,
+.contato button {
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
 }
 .image-replacement {
@@ -449,7 +452,6 @@ header .container {
   -moz-border-radius: 2em;
   -o-border-radius: 2em;
   border-radius: 2em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   font-weight: bold;
 }
 .destaque button:hover {
@@ -560,7 +562,6 @@ header .container {
   -moz-border-radius: 0.3em;
   -o-border-radius: 0.3em;
   border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   margin-left: 2em;
 }
 .plano button:hover {
@@ -653,7 +654,6 @@ textarea {
   -moz-border-radius: 0.3em;
   -o-border-radius: 0.3em;
   border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
 }
 /** Footer **/
 footer {
