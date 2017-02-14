@@ -6,7 +6,7 @@ header {
   width: 100%;
   position: absolute;
 
-  @media (@mobile) {
+  @media @mobile {
       height: auto;
   }
 
@@ -15,17 +15,23 @@ header {
 header .container {
   position: relative;
 
-  @media (@mobile) {
+  @media @mobile {
       position: static;
   }
 }
 
 .menu-principal {
-  position: absolute;
-  right: 0;
-  top: -.5em;
-  font-size: 1.2em;
-  font-weight: lighter;
+    position: absolute;
+    right: 0;
+    top: -.5em;
+    font-size: 1.2em;
+    font-weight: lighter;
+
+    @media @mobile {
+        position: static;
+        display: block;
+        text-align: center;
+    }
 
   ul {
     padding-left: 0;
@@ -35,7 +41,7 @@ header .container {
     display: inline-block;
     width: 5em;
 
-    @media (@mobile) {
+    @media @mobile {
         margin: . 4em;
     }
   }
