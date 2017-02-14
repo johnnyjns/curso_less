@@ -38,7 +38,7 @@ module.exports = function(grunt){
 
     });
 
-    grunt.registerTask('default', ['less', 'watch']);
+    grunt.registerTask('default', ['watch']);
 
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
