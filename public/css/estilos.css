@@ -397,8 +397,18 @@ header {
   width: 100%;
   position: absolute;
 }
+@media (max-width: 980px) {
+  header {
+    height: auto;
+  }
+}
 header .container {
   position: relative;
+}
+@media (max-width: 980px) {
+  header .container {
+    position: static;
+  }
 }
 .menu-principal {
   position: absolute;
@@ -413,6 +423,11 @@ header .container {
 .menu-principal li {
   display: inline-block;
   width: 5em;
+}
+@media (max-width: 980px) {
+  .menu-principal li {
+    margin: . 4em;
+  }
 }
 .menu-principal a {
   color: #fff;
@@ -738,15 +753,10 @@ footer a {
 .social a[href*="instagram"] {
   background-image: url(../imagens/instagram.png);
 }
+/** Media queries **/
 @media (max-width: 980px) {
   .container {
     width: 90%;
-  }
-  header {
-    height: auto;
-  }
-  header .container {
-    position: static;
   }
   header h1 {
     max-width: 50%;
@@ -761,9 +771,6 @@ footer a {
     position: static;
     display: block;
     text-align: center;
-  }
-  .menu-principal li {
-    margin: .4em;
   }
   .destaque {
     font-size: 14px;
